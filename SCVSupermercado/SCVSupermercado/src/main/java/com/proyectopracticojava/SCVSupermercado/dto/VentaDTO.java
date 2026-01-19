@@ -1,0 +1,30 @@
+package com.proyectopracticojava.SCVSupermercado.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Getter @Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class VentaDTO {
+
+    //Datos de la venta
+    private Long id;
+    private LocalDate fecha;
+    private String estado;
+
+
+    //Datos de la sucursal
+    private Long idSucursal;
+
+    //Lista de detalles
+    private List<DetalleVentaDTO> detalle;
+
+    //Total de la venta
+    private Double total;
+}

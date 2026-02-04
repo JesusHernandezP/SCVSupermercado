@@ -1,14 +1,12 @@
 package com.proyectopracticojava.SCVSupermercado.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+
 public class DetalleVenta {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -21,7 +19,7 @@ public class DetalleVenta {
     //Producto
     @ManyToOne
     private Producto producto;
-    private Integer cantidad;
+    private double cantidad;
     private double precio;
 
 

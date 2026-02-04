@@ -1,13 +1,12 @@
 package com.proyectopracticojava.SCVSupermercado.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jdk.jshell.Snippet;
+import lombok.*;
 
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder
 public class ProductoDTO {
 
     private Long id;
@@ -15,4 +14,6 @@ public class ProductoDTO {
     private String categoria;
     private double precio;
     private int cantidad;
+
+
 }

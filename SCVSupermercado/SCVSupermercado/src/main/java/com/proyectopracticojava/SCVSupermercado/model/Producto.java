@@ -3,15 +3,12 @@ package com.proyectopracticojava.SCVSupermercado.model;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 @Getter @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-
+@Builder
 public class Producto {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,5 +16,5 @@ public class Producto {
     private String nombre;
     private String categoria;
     private double precio;
-    private int cantidad;
+    private double cantidad;
 }

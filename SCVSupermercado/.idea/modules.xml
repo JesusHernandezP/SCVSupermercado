@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SCVSupermercado.iml" filepath="$PROJECT_DIR$/.idea/SCVSupermercado.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SCVSupermercado/SCVSupermercado.iml" filepath="$PROJECT_DIR$/SCVSupermercado/SCVSupermercado.iml" />
     </modules>
   </component>
 </project>
